@@ -1,0 +1,19 @@
+@import './_vars';
+
+@mixin Desktop {
+    @media screen and (min-width: $desktopPoint) {
+        @content;
+    }
+}
+
+@mixin Tablet {
+    @media screen and (max-width: $desktopPoint - 1) {
+        @content;
+    }
+}
+
+@mixin Mobile {
+    @media screen and (max-width: $mobilePoint - 1) {
+        @content;
+    }
+}
