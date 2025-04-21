@@ -187,7 +187,7 @@ function App() {
       ],
     },
     {
-      title: "Наука 2.0",
+      title: "Наука 3.0",
       id: 6,
       firstDate: 1977,
       secondDate: 1998,

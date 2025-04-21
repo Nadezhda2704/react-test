@@ -1,6 +1,5 @@
 import './App.css'
-import { MainCarouselDesktop } from './components/MainCarouselDesktop';
-import { MainCarouselMobile } from './components/MainCarouselMobile';
+import { Carousel } from './components/MainCarousel';
 import { Period } from './components/Period';
 import "./styles/global.scss";
 
@@ -78,7 +77,7 @@ function App() {
       ],
     },
     {
-      title: "Кино",
+      title: "Технологии 2.0",
       id: 3,
       firstDate: 1985,
       secondDate: 2015,
@@ -116,7 +115,7 @@ function App() {
       ],
     },
     {
-      title: "Литература",
+      title: "Наука 2.0",
       id: 4,
       firstDate: 1975,
       secondDate: 1988,
@@ -149,7 +148,7 @@ function App() {
       ],
     },
     {
-      title: "Спорт",
+      title: "Технологии 3.0",
       id: 5,
       firstDate: 1980,
       secondDate: 2003,
@@ -187,7 +186,7 @@ function App() {
       ],
     },
     {
-      title: "Наука 2.0",
+      title: "Наука 3.0",
       id: 6,
       firstDate: 1977,
       secondDate: 1998,
@@ -223,11 +222,10 @@ function App() {
 
   return (
     <>
-      <h2>Исторические даты</h2>
+      <h2>Заголовок блока</h2>
       <p>Circle</p>
       <Period />
-      <MainCarouselDesktop data={data} />
-      <MainCarouselMobile data={data} />
+      <Carousel data={data} />
     </>
   );
 }

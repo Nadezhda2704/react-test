@@ -1,0 +1,30 @@
+@import '../../styles/vars';
+
+.slideWrap {
+    min-height: 200px;
+    background-color: aqua;
+}
+
+
+
+.circle {
+
+}
+
+.period {
+    font-size: 200px;
+}
+
+.firstDate {
+    color: $blue;
+}
+
+.secondDate {
+    color: $pink;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}

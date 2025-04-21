@@ -1,0 +1,47 @@
+@import '../../styles/vars';
+
+.slideWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 530px;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 530px;
+    height: 530px;
+    border: 1px solid $blue;
+    opacity: .2;
+    border-radius: 50%;
+}
+
+.period {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    font-size: 200px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.firstDate {
+    color: $blue;
+}
+
+.secondDate {
+    color: $pink;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.pages {
+    font-size: 14px;
+}
