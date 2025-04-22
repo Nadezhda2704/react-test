@@ -1,7 +1,5 @@
 @use '../../styles/vars' as *;
 
-$btnSize: 50px;
-
 .wrap {
     position: relative;
 }
@@ -11,8 +9,7 @@ $btnSize: 50px;
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 560px;
-    padding-bottom: 30px;
+    min-height: 530px;
 }
 
 .circle {
@@ -50,13 +47,10 @@ $btnSize: 50px;
 }
 
 .pages {
-    $fontSize: 14px;
-    position: absolute;
-    bottom: calc($btnSize + $fontSize + 15px);
-    font-size: $fontSize;
-    line-height: 1;
+    font-size: 14px;
     text-align: left;
 }
+
 
 .swiper-pagination-bullet {
     width: 20px;
@@ -74,23 +68,15 @@ $btnSize: 50px;
     background: #007aff;
 }
 
+:global(.swiper-wrapper) {
+    position: absolute;
+    background-color: aliceblue;
+}
+
 :global(.swiper-button-prev) {
-    top: calc(100% - $btnSize) !important;
-    left: 0 !important;
-    width: $btnSize !important;
-    height: $btnSize !important;        
-    border: 1px solid rgba($blackBlue, .5);
-    border-radius: 50%;
-    color: $blackBlue !important;
+    background-color: aquamarine;
 }
 
 :global(.swiper-button-next) {
-    right: calc(100% - (2*$btnSize + 20px)) !important;
-    top: calc(100% - $btnSize) !important;
-    width: $btnSize !important;
-    height: $btnSize !important;
-    top: calc(100% - $btnSize) !important;
-    border: 1px solid rgba($blackBlue, .5);
-    border-radius: 50%;
-    color: $blackBlue !important;
+    background-color: aquamarine;
 }

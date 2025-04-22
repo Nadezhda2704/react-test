@@ -1,0 +1,28 @@
+$padding: 80px;
+
+.mainContainer {
+    padding: 100px 80px 40px;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 56px;
+    width: 350px;
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 20px;
+        bottom: 20px;
+        left: -$padding;
+        width: 3px;
+        background-color: aqua;
+
+    }
+}

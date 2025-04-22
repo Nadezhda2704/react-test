@@ -226,9 +226,10 @@ function App() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <div className={css.mainContainer}>
+    <>
       <h2 className={css.title}>Исторические даты</h2>
       <p>mainIndex {mainIndex}</p>
+      <Period />
       <MainCarouselDesktop
         data={data}
         mainIndex={mainIndex}
@@ -236,7 +237,7 @@ function App() {
       />
       {/* <MainCarouselMobile data={data} /> */}
       <InfoDateCarousel dates={data[mainIndex].children} />
-    </div>
+    </>
   );
 }
 

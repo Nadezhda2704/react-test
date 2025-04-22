@@ -52,7 +52,7 @@ $btnSize: 50px;
 .pages {
     $fontSize: 14px;
     position: absolute;
-    bottom: calc($btnSize + $fontSize + 15px);
+    bottom: calc($btnSize + $fontSize + 20px);
     font-size: $fontSize;
     line-height: 1;
     text-align: left;
@@ -85,7 +85,7 @@ $btnSize: 50px;
 }
 
 :global(.swiper-button-next) {
-    right: calc(100% - (2*$btnSize + 20px)) !important;
+    right: calc(100% - (2*$btnSize + 30px)) !important;
     top: calc(100% - $btnSize) !important;
     width: $btnSize !important;
     height: $btnSize !important;

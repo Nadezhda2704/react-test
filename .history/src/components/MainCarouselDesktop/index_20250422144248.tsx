@@ -10,7 +10,7 @@ export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return (
-    <div className={css.wrap}>
+    <>
       <Swiper
         initialSlide={mainIndex}
         modules={[Navigation, Pagination]}
@@ -46,10 +46,10 @@ export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
       </Swiper>
 
       <div className={css.pages}>
-        <span>0{activeIndex + 1}</span>
+        <span>{activeIndex + 1}</span>
         <span>/</span>
-        <span>0{data.length}</span>
+        <span>{data.length}</span>
       </div>
-    </div>
+    </>
   );
 }

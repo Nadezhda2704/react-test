@@ -1,0 +1,24 @@
+.mainContainer {
+    padding: 100px 20px 40px;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 56px;
+    width: 350px;
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 20px;
+        bottom: 20px;
+        width: 3px;
+        background-color: aqua;
+
+    }
+}

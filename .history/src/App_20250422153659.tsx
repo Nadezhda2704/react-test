@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import './App.css'
 import { MainCarouselDesktop } from './components/MainCarouselDesktop';
 import { MainCarouselMobile } from './components/MainCarouselMobile';
 import { Period } from './components/Period';
 import "./styles/global.scss";
 import { InfoDateCarousel } from './components/InfoDateCarousel';
-import css from "./app.module.scss";
+import css from "./App.scss";
 
 function App() {
   const data = [
@@ -226,9 +227,11 @@ function App() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <div className={css.mainContainer}>
+    <>
       <h2 className={css.title}>Исторические даты</h2>
+      <p>Circle</p>
       <p>mainIndex {mainIndex}</p>
+      <Period />
       <MainCarouselDesktop
         data={data}
         mainIndex={mainIndex}
@@ -236,7 +239,7 @@ function App() {
       />
       {/* <MainCarouselMobile data={data} /> */}
       <InfoDateCarousel dates={data[mainIndex].children} />
-    </div>
+    </>
   );
 }
 

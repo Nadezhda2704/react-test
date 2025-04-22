@@ -52,7 +52,7 @@ $btnSize: 50px;
 .pages {
     $fontSize: 14px;
     position: absolute;
-    bottom: calc($btnSize + $fontSize + 15px);
+    bottom: calc($btnSize + $fontSize + 10px);
     font-size: $fontSize;
     line-height: 1;
     text-align: left;
