@@ -236,8 +236,8 @@ function App() {
         mainIndex={mainIndex}
         onIndexChange={setMainIndex}
       />
-      {/* <MainCarouselMobile data={data} /> */}
-      <InfoDateCarousel dates={data[mainIndex].children} />
+      <MainCarouselMobile data={data} />
+      <InfoDateCarousel dates={data[mainIndex]} />
     </>
   );
 }

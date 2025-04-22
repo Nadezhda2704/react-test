@@ -5,14 +5,13 @@ import { Navigation, Pagination } from 'swiper/modules';
 import React from 'react';
 
 
-export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
+export const MainCarouselDesktop = ({data, onIndexChange}) => {
 
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return (
     <div className={css.wrap}>
       <Swiper
-        initialSlide={mainIndex}
         modules={[Navigation, Pagination]}
         spaceBetween={50}
         slidesPerView={1}
@@ -25,7 +24,7 @@ export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
         }}
         onSlideChange={(Swiper) => {
           console.log("slide change", Swiper);
-          const activeIndex = Swiper.activeIndex;
+          const activeIndex = Swiper.activeIndex;;
           setActiveIndex(activeIndex);
           onIndexChange(activeIndex);
         }}

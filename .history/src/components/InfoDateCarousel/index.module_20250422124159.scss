@@ -1,0 +1,23 @@
+@use '../../styles/vars' as *;
+
+.wrap {
+}
+
+.slideWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 530px;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text {
+    
+}
+

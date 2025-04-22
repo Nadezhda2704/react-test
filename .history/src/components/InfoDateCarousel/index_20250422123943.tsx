@@ -5,14 +5,13 @@ import { Navigation, Pagination } from 'swiper/modules';
 import React from 'react';
 
 
-export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
+export const InfoDateCarousel = ({dates}) => {
 
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setactiveIndex] = React.useState(0);
 
   return (
     <div className={css.wrap}>
       <Swiper
-        initialSlide={mainIndex}
         modules={[Navigation, Pagination]}
         spaceBetween={50}
         slidesPerView={1}
@@ -24,22 +23,16 @@ export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
           },
         }}
         onSlideChange={(Swiper) => {
-          console.log("slide change", Swiper);
-          const activeIndex = Swiper.activeIndex;
-          setActiveIndex(activeIndex);
-          onIndexChange(activeIndex);
+          console.log("slide change", Swiper.activeIndex);
+          setactiveIndex(Swiper.activeIndex);
         }}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {data.map((type) => (
-          <SwiperSlide key={type.id} className="swiper-slide">
+        {dates.map((date) => (
+          <SwiperSlide key={date.id} className="swiper-slide">
             <div className={css.slideWrap}>
-              <div className={css.circle}></div>
-              <div className={css.period}>
-                <span className={css.firstDate}>{type.firstDate}</span>
-                <span className={css.secondDate}>{type.secondDate}</span>
-              </div>
-              <div className={css.title}>{type.title}</div>
+              <div className={css.title}>{date.title}</div>
+              <div className={css.text}>{date.text}</div>
             </div>
           </SwiperSlide>
         ))}

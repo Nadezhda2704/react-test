@@ -4,7 +4,6 @@ import { MainCarouselDesktop } from './components/MainCarouselDesktop';
 import { MainCarouselMobile } from './components/MainCarouselMobile';
 import { Period } from './components/Period';
 import "./styles/global.scss";
-import { InfoDateCarousel } from './components/InfoDateCarousel';
 
 function App() {
   const data = [
@@ -231,13 +230,8 @@ function App() {
       <p>Circle</p>
       <p>mainIndex {mainIndex}</p>
       <Period />
-      <MainCarouselDesktop
-        data={data}
-        mainIndex={mainIndex}
-        onIndexChange={setMainIndex}
-      />
-      {/* <MainCarouselMobile data={data} /> */}
-      <InfoDateCarousel dates={data[mainIndex].children} />
+      <MainCarouselDesktop data={data} onIndexChange={setMainIndex} />
+      <MainCarouselMobile data={data} />
     </>
   );
 }
