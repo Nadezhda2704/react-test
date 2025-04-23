@@ -1,0 +1,42 @@
+@use 'styles/vars' as *;
+
+$padding: 80px;
+
+.mainContainer {
+    padding: 100px 80px 40px;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    border-left: 1px solid rgba($blackBlue, .1);
+    border-right: 1px solid rgba($blackBlue, .1);
+
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        display: block;
+        content: '';
+        background-color: rgba($blackBlue, .1);
+    }
+}
+
+.title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 56px;
+    width: 350px;
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 16px;
+        bottom: 16px;
+        left: -$padding;
+        transform: translateX(-50%);
+        width: 5px;
+        background-image: linear-gradient(to bottom, $blue, $pink);
+    }
+}

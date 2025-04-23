@@ -1,0 +1,18 @@
+@use '../../styles/vars' as *;
+
+.pages {
+    $fontSize: 14px;
+    position: absolute;
+    bottom: calc($btnSize + $fontSize + 15px);
+    font-size: $fontSize;
+    line-height: 1;
+    text-align: left;
+}
+
+.firstDate {
+    color: $blue;
+}
+
+.secondDate {
+    color: $pink;
+}

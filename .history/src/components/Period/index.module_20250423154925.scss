@@ -1,0 +1,19 @@
+@use '../../styles/vars' as *;
+
+.period {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    font-size: 200px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    user-select: none;
+}
+
+.firstDate {
+    color: $blue;
+}
+
+.secondDate {
+    color: $pink;
+}

@@ -1,0 +1,25 @@
+@use '../../styles/vars' as *;
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    user-select: none;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 530px;
+    height: 530px;
+    border: 1px solid rgba($blue, .2);
+    border-radius: 50%;
+}
+
+.button {
+    width: 6px;
+    height: 6px;
+    background-color: $blackBlue;
+    border-radius: 50%;
+}
