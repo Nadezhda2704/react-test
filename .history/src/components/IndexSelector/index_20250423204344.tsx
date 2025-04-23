@@ -36,7 +36,6 @@ export const IndexSelector = ({ title, total, mainIndex, onIndexChange }) => {
               style={{
                 left: `${points[index].x}px`,
                 top: `${points[index].y}px`,
-                transform: `translate(-50%, -50%) rotate(${angle * mainIndex}deg)`,
               }}
             >
               <div className={css.dot}></div>

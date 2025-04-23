@@ -3,8 +3,7 @@
 $size: 530px;
 
 .wrap {
-    position: relative;
-    height: $size;
+    height: 530px;
 
     &:after {
         position: absolute;
@@ -22,9 +21,6 @@ $size: 530px;
 .circleWrap {
     position: relative;
     height: 100%;
-    width: $size;
-    height: $size;
-    margin: auto;
 }
 
 .title {
@@ -44,25 +40,23 @@ $size: 530px;
     border: 1px solid rgba($blackBlue, .2);
     border-radius: 50%;
     transform-origin: 50% 50%;
-    transition: transform .4s,
 }
 
 .button {
     position: absolute;
     padding: 10px;
     box-sizing: content-box;
+    transform: translate(-50%, -50%);
     cursor: pointer;
 
     &:hover {
         .dot {
             opacity: 0;
             transform: translate(-50%, -50%) scale(9.3);
-            transition: opacity ease-in .4s, transform .2s;
         }
 
         .number {
             opacity: 1;
-            transition: opacity .4s,
         }
     }
 }
@@ -71,12 +65,10 @@ $size: 530px;
     .dot {
         opacity: 0;
         transform: translate(-50%, -50%) scale(9.3);
-        transition: opacity ease-in .4s, transform .2s;
     }
             
     .number {
-        opacity: 1;   
-        transition: opacity .4s,
+        opacity: 1;        
     }
 }
 
@@ -92,7 +84,7 @@ $size: 530px;
     border-radius: 50%;
     opacity: 1;
     transform-origin: 50% 50%;
-    
+    transition: opacity ease-in .4s, transform .2s;
 }
 
 .number {
@@ -107,4 +99,5 @@ $size: 530px;
     border-radius: 50%;
     border: 1px solid rgba($blackBlue, .5);
     opacity: 0;
+    transition: opacity .4s,
 }
