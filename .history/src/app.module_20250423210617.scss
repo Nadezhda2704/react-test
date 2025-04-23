@@ -3,7 +3,7 @@
 $padding: 80px;
 
 .mainContainer {
-    padding: 100px 80px 100px;
+    padding: 100px 80px 40px;
     position: relative;
     width: 1440px;
     margin: 0 auto;
@@ -33,7 +33,7 @@ $padding: 80px;
         display: block;
         content: '';
         top: 10px;
-        bottom: 4px;
+        bottom: 2px;
         left: -$padding;
         transform: translateX(-50%);
         width: 5px;
