@@ -1,0 +1,63 @@
+@import 'styles/mixins';
+@import 'styles/vars';
+
+$padding: 80px;
+
+.mainContainer {
+    padding: 100px 80px 100px;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    border-left: 1px solid rgba($blackBlue, .1);
+    border-right: 1px solid rgba($blackBlue, .1);
+
+    @include Tablet() {
+        width: 100%;
+    }
+
+    @include Mobile() {
+        padding: 60px 20px 20px;
+    }
+
+    &:before {
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: rgba($blackBlue, .1);
+
+        @include Mobile() {
+            display: none;
+        }
+    }
+}
+
+.title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 56px;
+    width: 350px;
+
+    @include Tablet() {
+        position: static;
+    }
+    
+    @include Mobile() {
+        position: static;
+        font-size: 20px;
+    }
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 10px;
+        bottom: 4px;
+        left: -$padding;
+        width: 5px;
+        background-image: linear-gradient(to bottom, $blue, $pink);
+    }
+}

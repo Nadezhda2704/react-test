@@ -1,0 +1,77 @@
+@use '../../styles/vars' as *;
+
+$btnSize: 50px;
+
+.wrap {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+.slideWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 60px;
+    padding-bottom: 30px;
+}
+
+.pages {
+    $fontSize: 14px;
+    position: absolute;
+    bottom: calc($btnSize + $fontSize + 15px);
+    font-size: $fontSize;
+    line-height: 1;
+    text-align: left;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+}
+
+:global(.swiper-button-prev) {
+    top: calc(100% - $btnSize) !important;
+    left: 0 !important;
+    width: $btnSize !important;
+    height: $btnSize !important;
+    border: 1px solid rgba($blackBlue, .5);
+    border-radius: 50%;
+    color: $blackBlue !important;
+}
+
+:global(.swiper-button-prev::after) {
+    font-size: 12px !important;
+}
+
+:global(.swiper-button-next) {
+    right: calc(100% - (2*$btnSize + 20px)) !important;
+    top: calc(100% - $btnSize) !important;
+    width: $btnSize !important;
+    height: $btnSize !important;
+    top: calc(100% - $btnSize) !important;
+    border: 1px solid rgba($blackBlue, .5);
+    border-radius: 50%;
+    color: $blackBlue !important;
+}
+
+:global(.swiper-button-next::after) {
+    font-size: 12px !important;
+}
+
+:global(.swiper-pagination) {
+    width: 350px !important;
+    left: 50% !important;
+}

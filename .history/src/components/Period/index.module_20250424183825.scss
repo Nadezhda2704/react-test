@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+.period {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    font-size: 200px;
+    line-height: 1;
+    font-weight: 700;
+    padding-bottom: 20px;
+    user-select: none;
+
+    @include Tablet() {
+        top: calc(200px + 2vw);
+        width: 100%;
+        font-size: 15vw;
+    }
+    
+    @include Mobile() {
+        padding: 60px 20px 20px;
+    }
+}
+
+.firstDate {
+    color: $blue;
+}
+
+.secondDate {
+    color: $pink;
+}

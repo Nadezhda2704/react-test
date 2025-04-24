@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+$btnSize: 25px;
+
+.wrap {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.slideWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 60px;
+    padding-bottom: 30px;
+}
+
+.pages {
+    $fontSize: 14px;
+    position: absolute;
+    bottom: calc($btnSize + $fontSize + 15px);
+    font-size: $fontSize;
+    line-height: 1;
+    text-align: left;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+}
+
