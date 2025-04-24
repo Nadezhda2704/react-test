@@ -55,10 +55,11 @@ $btnSize: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        transform-origin: 50% 50%;
         content: '';
         display: block;
         width: 8px;
-        height: 12px;
+        height: 16px;
         background-image: url('../../assets/arrow.svg');
         background-repeat: no-repeat;
     }
@@ -66,11 +67,6 @@ $btnSize: 40px;
 
 .prev {
     left: - 60px;
-
-    &:after {
-        transform: translate(-50%, -50%) rotate(180deg);
-        transform-origin: 50% 50%;
-    }
 }
 
 .next {

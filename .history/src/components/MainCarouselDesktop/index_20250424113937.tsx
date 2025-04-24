@@ -14,7 +14,8 @@ export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
         slidesPerView={1}
         navigation
         onSlideChange={(Swiper) => {
-          onIndexChange(Swiper.activeIndex);
+          const activeIndex = Swiper.activeIndex;
+          onIndexChange(activeIndex);
         }}
         modules={[Navigation, Pagination]}
       >

@@ -35,7 +35,7 @@ $btnSize: 40px;
 .prev,
 .next {
     position: absolute;
-    top: calc(50% - $btnSize);
+    top: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,35 +44,14 @@ $btnSize: 40px;
     background-color: $white;
     box-shadow: 0px 0px 15px 0px #3877EE1A;
     border-radius: 50%;
-    // font-family: swiper-icons;
+    font-family: swiper-icons;
     cursor: pointer;
-    user-select: none;
-    // color: $blue;
-    // font-size: 12px;
-
-    &:after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        content: '';
-        display: block;
-        width: 8px;
-        height: 12px;
-        background-image: url('../../assets/arrow.svg');
-        background-repeat: no-repeat;
-    }
 }
 
 .prev {
-    left: - 60px;
-
-    &:after {
-        transform: translate(-50%, -50%) rotate(180deg);
-        transform-origin: 50% 50%;
-    }
+    left: - 40px;
 }
 
 .next {
-    right: -40px;
+    right: 40px;
 }

@@ -2,20 +2,24 @@ import css from './index.module.scss';
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
-import { useState } from 'react';
+import React from 'react';
 
 
 export const InfoDateCarousel = ({dates}) => {
-  const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
-  const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
+
+  const [activeIndex, setactiveIndex] = React.useState(0);
 
   return (
     <div className={css.wrap}>
       <Swiper
-        modules={[Navigation]}
-        spaceBetween={80}
+        spaceBetween={50}
         slidesPerView={3}
-        navigation={{ prevEl, nextEl }}
+        navigation
+        modules={[Navigation]}
+        onSlideChange={(Swiper) => {
+          console.log("slide change", Swiper.activeIndex);
+          setactiveIndex(Swiper.activeIndex);
+        }}
       >
         {dates.map((date) => (
           <SwiperSlide key={date.id} className="swiper-slide">
@@ -26,9 +30,6 @@ export const InfoDateCarousel = ({dates}) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <div className={css.prev} ref={(node) => setPrevEl(node)}></div>
-      <div className={css.next} ref={(node) => setNextEl(node)}></div>
     </div>
   );
 }

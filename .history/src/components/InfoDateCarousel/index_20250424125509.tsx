@@ -27,8 +27,12 @@ export const InfoDateCarousel = ({dates}) => {
         ))}
       </Swiper>
 
-      <div className={css.prev} ref={(node) => setPrevEl(node)}></div>
-      <div className={css.next} ref={(node) => setNextEl(node)}></div>
+      <div className={`${css.prev} .prev-date-info `} ref={(node) => setPrevEl(node)}>
+        prev
+      </div>
+      <div className={css.next} ref={(node) => setNextEl(node)}>
+        next
+      </div>
     </div>
   );
 }

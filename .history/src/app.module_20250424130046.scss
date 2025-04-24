@@ -35,6 +35,7 @@ $padding: 80px;
         top: 10px;
         bottom: 4px;
         left: -$padding;
+        // transform: translateX(-50%);
         width: 5px;
         background-image: linear-gradient(to bottom, $blue, $pink);
     }

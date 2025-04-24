@@ -73,6 +73,7 @@ $size: 530px;
         opacity: 0;
         transform: translate(-50%, -50%) scale(9.3);
         transition: opacity ease-in .4s, transform .2s;
+        background-color: $defaultBackgroundColor;
     }
             
     .number {
@@ -100,7 +101,7 @@ $size: 530px;
     width: 56px;
     height: 56px;
     font-size: 20px;
-    background-color: $defaultBackgroundColor;
+    background-color: $white;
     line-height: 1;
     display: flex;
     align-items: center;

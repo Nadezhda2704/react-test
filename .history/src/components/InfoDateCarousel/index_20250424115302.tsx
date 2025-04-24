@@ -13,7 +13,7 @@ export const InfoDateCarousel = ({dates}) => {
     <div className={css.wrap}>
       <Swiper
         modules={[Navigation]}
-        spaceBetween={80}
+        spaceBetween={50}
         slidesPerView={3}
         navigation={{ prevEl, nextEl }}
       >
@@ -27,8 +27,8 @@ export const InfoDateCarousel = ({dates}) => {
         ))}
       </Swiper>
 
-      <div className={css.prev} ref={(node) => setPrevEl(node)}></div>
-      <div className={css.next} ref={(node) => setNextEl(node)}></div>
+      <div ref={(node) => setPrevEl(node)}>prev</div>
+      <div ref={(node) => setNextEl(node)}>next</div>
     </div>
   );
 }
