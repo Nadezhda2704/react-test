@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <InfoDatesMainBlock data={data} />
+      <InfoDatesMainBlock data={data} />
     </>
   )
 }
