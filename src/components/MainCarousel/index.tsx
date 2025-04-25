@@ -4,7 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 
-export const MainCarouselDesktop = ({data, mainIndex, onIndexChange}) => {
+export const MainCarousel = ({data, mainIndex, onIndexChange}) => {
 
   return (
     <div className={css.wrap}>

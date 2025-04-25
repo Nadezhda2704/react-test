@@ -1,5 +1,5 @@
-@import '../../styles/mixins';
-@import '../../styles/vars';
+@import 'styles/mixins';
+@import 'styles/vars';
 
 $btnSize: 40px;
 
@@ -25,21 +25,12 @@ $btnSize: 40px;
     color: $blue;
     font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 12px;
-
-    @include Mobile() {
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
 }
 
 .text {
     text-align: left;
     font-size: 20px;
     line-height: 1.5;
-
-    @include Mobile() {
-        font-size: 14px;
-    }
 }
 
 .prev,

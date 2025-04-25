@@ -1,7 +1,7 @@
 import css from './index.module.scss';
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation } from 'swiper/modules';
 import { useState } from 'react';
 
 
@@ -28,6 +28,7 @@ export const InfoDateCarousel = ({dates}) => {
           1024: {
             slidesPerView: 3,
             spaceBetween: 80,
+            autoplay: true,
           },
         }}
       >

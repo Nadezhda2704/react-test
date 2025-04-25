@@ -1,7 +1,7 @@
 import css from './index.module.scss';
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { useState } from 'react';
 
 
@@ -12,7 +12,7 @@ export const InfoDateCarousel = ({dates}) => {
   return (
     <div className={css.wrap}>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={80}
         slidesPerView="auto"
         navigation={{ prevEl, nextEl }}
@@ -28,6 +28,10 @@ export const InfoDateCarousel = ({dates}) => {
           1024: {
             slidesPerView: 3,
             spaceBetween: 80,
+            autoplay: {
+              delay: 500,
+              disableOnInteraction: false,
+            },
           },
         }}
       >

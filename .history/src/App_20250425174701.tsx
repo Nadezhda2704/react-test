@@ -8,9 +8,9 @@ import { IndexSelector } from './components/IndexSelector';
 import { useMediaQuery } from 'react-responsive';
 import { MainCarouselMobile } from './components/MainCarouselMobile';
 import { InfoDateCarouselMobile } from './components/InfoDateCarouselMobile';
-import { data } from './mocs/data';
 
 function App() {
+  
 
   const [mainIndex, setMainIndex] = useState(0);
 
