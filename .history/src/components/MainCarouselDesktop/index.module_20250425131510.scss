@@ -74,12 +74,8 @@ $btnSizeMob: 25px;
     font-size: 12px !important;
 
     @include Mobile() {
-        font-size: 8px !important;
+        font-size: 10px !important;
     }
-}
-
-:global(.swiper-pagination) {
-    top: 10px !important;
 }
 
 :global(.swiper-pagination-bullet) {

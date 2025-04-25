@@ -26,7 +26,23 @@ $btnSizeMob: 25px;
     font-size: $fontSize;
     line-height: 1;
     text-align: left;
-}   
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 6px;
+    color: #000;
+    opacity: 1;
+    background: rgba($blackBlue, .4);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: rgba($blackBlue, 1);
+}
 
 :global(.swiper-button-prev) {
     top: calc(100% - $btnSize) !important;
@@ -74,21 +90,6 @@ $btnSizeMob: 25px;
     font-size: 12px !important;
 
     @include Mobile() {
-        font-size: 8px !important;
+        font-size: 10px !important;
     }
-}
-
-:global(.swiper-pagination) {
-    top: 10px !important;
-}
-
-:global(.swiper-pagination-bullet) {
-    background: rgba($blackBlue, .4) !important;
-    width: 6px !important;
-    height: 6px !important;
-    margin: 0 5px 4px !important;
-}
-
-:global(.swiper-pagination-bullet-active) {
-    background: rgba($blackBlue, 1) !important;
 }
