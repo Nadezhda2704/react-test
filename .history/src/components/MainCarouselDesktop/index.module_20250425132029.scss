@@ -41,7 +41,6 @@ $btnSizeMob: 25px;
         top: calc(100% - $btnSizeMob) !important;
         width: $btnSizeMob !important;
         height: $btnSizeMob !important;
-        z-index: 20 !important;
     }
 }
 
@@ -68,7 +67,7 @@ $btnSizeMob: 25px;
         right: calc(100% - (2*$btnSizeMob + 10px)) !important;
         width: $btnSizeMob !important;
         height: $btnSizeMob !important;
-        z-index: 20 !important;
+        z-index: 20;
     }
 }
 
