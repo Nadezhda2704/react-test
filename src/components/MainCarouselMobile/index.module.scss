@@ -4,35 +4,35 @@
 $btnSize: 25px;
 
 .wrap {
-    position: relative;
-    margin-top: 86px;
+  position: relative;
+  margin-top: 86px;
 }
 
 .slideWrap {
-    min-height: 60px;
+  min-height: 60px;
 }
 
 .pages {
-    $fontSize: 14px;
-    position: absolute;
-    bottom: calc($btnSize + $fontSize + 15px);
-    font-size: $fontSize;
-    line-height: 1;
-    text-align: left;
+  $fontSize: 14px;
+  position: absolute;
+  bottom: calc($btnSize + $fontSize + 15px);
+  font-size: $fontSize;
+  line-height: 1;
+  text-align: left;
 }
 
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color: #000;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
+  color: #fff;
+  background: #007aff;
 }

@@ -9,26 +9,26 @@ $btnSize: 40px;
 }
 
 .slideWrap {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
   user-select: none;
   cursor: pointer;
 }
 
 .date {
-  margin-bottom: 12px;
-  font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: $blue;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 12px;
 
   @include Mobile() {
-    margin-bottom: 8px;
     font-size: 16px;
+    margin-bottom: 8px;
   }
 }
 
@@ -54,24 +54,24 @@ $btnSize: 40px;
   background-color: $white;
   box-shadow: 0px 0px 15px 0px #3877ee1a;
   border-radius: 50%;
-  user-select: none;
   cursor: pointer;
+  user-select: none;
 
   @include Mobile() {
     display: none;
   }
 
   &:after {
-    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
     display: block;
     width: 8px;
     height: 12px;
     background-image: url('../../assets/arrow.svg');
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -79,8 +79,8 @@ $btnSize: 40px;
   left: -60px;
 
   &:after {
-    transform-origin: 50% 50%;
     transform: translate(-50%, -50%) rotate(180deg);
+    transform-origin: 50% 50%;
   }
 }
 

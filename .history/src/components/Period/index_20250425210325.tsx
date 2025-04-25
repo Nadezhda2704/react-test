@@ -3,6 +3,7 @@ import css from './index.module.scss';
 import gsap from 'gsap';
 
 export const Period = ({ firstDate, secondDate }) => {
+  
   const [firstD, setFirstD] = React.useState(1999);
   const [secondD, setSecondD] = React.useState(1999);
 

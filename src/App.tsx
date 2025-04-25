@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { MainCarousel } from './components/MainCarousel';
-import "./styles/global.scss";
+import './styles/global.scss';
 import { InfoDateCarousel } from './components/InfoDateCarousel';
-import css from "./app.module.scss";
+import css from './app.module.scss';
 import { Period } from './components/Period';
 import { IndexSelector } from './components/IndexSelector';
 import { useMediaQuery } from 'react-responsive';
@@ -11,19 +11,15 @@ import { InfoDateCarouselMobile } from './components/InfoDateCarouselMobile';
 import { data } from './mocs/data';
 
 function App() {
-
   const [mainIndex, setMainIndex] = useState(0);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   return (
     <div className={css.mainContainer}>
       <h2 className={css.title}>Исторические даты</h2>
-      
-      <Period
-        firstDate={data[mainIndex].firstDate}
-        secondDate={data[mainIndex].secondDate}
-      />
+
+      <Period firstDate={data[mainIndex].firstDate} secondDate={data[mainIndex].secondDate} />
 
       {isMobile ? null : (
         <IndexSelector
@@ -34,29 +30,17 @@ function App() {
         />
       )}
 
-      {isMobile ? null : (
-        <MainCarousel
-          data={data}
-          mainIndex={mainIndex}
-          onIndexChange={setMainIndex}
-        />
-      )}
+      {isMobile ? null : <MainCarousel data={data} mainIndex={mainIndex} onIndexChange={setMainIndex} />}
 
       {isMobile ? (
-        <InfoDateCarouselMobile dates={data[mainIndex].children}/>
+        <InfoDateCarouselMobile dates={data[mainIndex].children} />
       ) : (
         <InfoDateCarousel dates={data[mainIndex].children} />
       )}
 
-      {isMobile ? (
-        <MainCarouselMobile
-          data={data}
-          mainIndex={mainIndex}
-          onIndexChange={setMainIndex}
-        />
-      ) : null}
+      {isMobile ? <MainCarouselMobile data={data} mainIndex={mainIndex} onIndexChange={setMainIndex} /> : null}
     </div>
   );
 }
 
-export default App
+export default App;

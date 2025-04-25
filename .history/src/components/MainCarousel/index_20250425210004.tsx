@@ -1,6 +1,6 @@
 import css from './index.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 export const MainCarousel = ({ data, mainIndex, onIndexChange }) => {

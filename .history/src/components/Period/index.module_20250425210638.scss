@@ -17,7 +17,7 @@
   user-select: none;
 
   @include Tablet() {
-    top: calc(220px + 5vw);
+    top: 30vw;
     width: 100%;
     font-size: 15vw;
   }

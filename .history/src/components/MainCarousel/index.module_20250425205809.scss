@@ -80,10 +80,10 @@ $btnSizeMob: 25px;
 }
 
 :global(.swiper-pagination-bullet) {
+  background: rgba($blackBlue, 0.4) !important;
   width: 6px !important;
   height: 6px !important;
   margin: 0 5px 4px !important;
-  background: rgba($blackBlue, 0.4) !important;
 }
 
 :global(.swiper-pagination-bullet-active) {

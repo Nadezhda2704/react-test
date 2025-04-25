@@ -3,6 +3,7 @@ import css from './index.module.scss';
 
 export const IndexSelector = ({ title, total, mainIndex, onIndexChange }) => {
   const arr = new Array(total).fill('');
+
   const size = 530;
   const angle = 360 / total;
   const points = getCoordinatesOfPoints(size / 2, total);
