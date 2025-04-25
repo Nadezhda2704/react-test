@@ -13,6 +13,12 @@ export const Period = ({firstDate, secondDate}) => {
   React.useEffect(() => {
 
     if (firstD !== firstDate && secondD !== secondDate) {
+      console.log("firstD", firstD);
+      console.log("secondD", secondD);
+
+      console.log("firstDate", firstDate);
+      console.log("secondDate", secondDate);
+
       gsap.from(firstElement, {
         textContent: firstD,
         duration: 2,

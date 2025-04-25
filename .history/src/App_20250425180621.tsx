@@ -19,7 +19,6 @@ function App() {
   return (
     <div className={css.mainContainer}>
       <h2 className={css.title}>Исторические даты</h2>
-      
       <Period
         firstDate={data[mainIndex].firstDate}
         secondDate={data[mainIndex].secondDate}

@@ -6,7 +6,7 @@ $btnSizeMob: 25px;
 
 .wrap {
     position: relative;
-    margin-bottom: 36px;
+    margin-bottom: 50px;
     margin-top: -20px;
 }
 
@@ -18,7 +18,7 @@ $btnSizeMob: 25px;
 .pages {
     $fontSize: 14px;
     position: absolute;
-    bottom: calc($btnSize + $fontSize + 30px);
+    bottom: calc($btnSize + $fontSize + 15px);
     font-size: $fontSize;
     line-height: 1;
     text-align: left;
